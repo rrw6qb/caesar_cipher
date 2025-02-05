@@ -10,7 +10,6 @@ def encoder(phrase, shiftNumber):
             concat_word += chr(updated_c)
         updated_words.append(concat_word)
     encoded_words= " ".join(updated_words)
-    print (encoded_words)
     return encoded_words
 
 
