@@ -4,8 +4,8 @@ import sys
 
 
 def phrase_obtainer():
-    user_response = input("Please type what you would like to be encoded: ")
-    return user_response
+    u_r = input("Please type what you would like to be encoded/decoded: ")
+    return u_r
     
 
 
