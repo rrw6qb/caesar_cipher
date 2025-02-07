@@ -13,12 +13,15 @@ def main():
         shiftnumber = cip.cc_shift_number()
         encoded_phrase = ce.encoder(phrase,shiftnumber)
         print("Encoded Phrase: ", encoded_phrase)
-        sys.exit
+        raise SystemExit
     if user_response == "decode":
-        pass
-
+        phrase = cip.phrase_obtainer()
+        shiftnumber = cip.cc_shift_number()
+        decoded_phrase = cd.decoder(phrase,shiftnumber)
+        print("Decoded Phrase: ", decoded_phrase)
+        raise SystemExit
     print("Incorrect input, Goodbye!")
-    sys.exit
+    raise SystemExit
         
         
 if __name__ == '__main__':
